@@ -1,9 +1,11 @@
-# Kinect v1 driver script
+# Important scripts for data capture and data processing with Kinect v1
 
-## Info
+## Kinect v1 driver script
+
+### Info
 * The script [capture_images.py](capture_images.py) can be used to capture RGB and depth images with kinect v1.
 
-## Setup instructions
+### Setup instructions
 * The following are instructions to install the dependency - [libfreenect](https://github.com/OpenKinect/libfreenect)
 1. Install cython
 ```
@@ -64,8 +66,7 @@ Bus 001 Device 019: ID 045e:02b0 Microsoft Corp. Xbox NUI Motor
 Bus 001 Device 020: ID 045e:02ad Microsoft Corp. Xbox NUI Audio
 ```
 
-
-## Script usage
+### Script usage
 * This script can be used only on Linux environment with the above mentioned dependencies.
 * To list all the commandline options, run the following command
 ```
@@ -78,3 +79,11 @@ source ~/.bashrc
 python3 capture_images.py
 ```
 * Use `Ctrl + C` to stop the script.
+
+## Depth data processing
+
+### Convert depth images from pickled numpy array to EXR format
+* Use the script in the following way
+```
+python3 convert_depth_images.py
+```
