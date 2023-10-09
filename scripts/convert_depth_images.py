@@ -14,7 +14,7 @@ def convert_depth_images_to_exr(ARGS):
     depth_images = np.array(depth_images)
     num_depth_images = depth_images.shape[0]
 
-    print(f"Num depth files to convert: {num_depth_images}")
+    print(f"Num depth images to convert: {num_depth_images}")
 
     if not os.path.isdir(ARGS.dir_out_depth_exr_data):
         os.makedirs(ARGS.dir_out_depth_exr_data)
@@ -38,9 +38,9 @@ def convert_depth_images_to_exr(ARGS):
 def main():
     parser = argparse.ArgumentParser(description="convert format of depth images")
     parser.add_argument("--file_depth_pickle", required=True,
-        help="full directory path containing depth exr files")
+        help="full path to depth pickle file")
     parser.add_argument("--dir_out_depth_exr_data", required=True,
-        help="full directory path where output depth images need to be saved")
+        help="full directory path where output depth images in .exr format need to be saved")
     parser.add_argument("--str_prefix_file_name", required=True,
         help="string prefix for file name")
     ARGS = parser.parse_args()
