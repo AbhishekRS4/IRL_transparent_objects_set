@@ -83,7 +83,7 @@ python3 capture_images.py
 ## Depth data processing
 
 ### Convert depth images from pickled numpy array to EXR format
-* Use the script in the following way
+* Use the script in the following way to list possible commandline options
 ```
-python3 convert_depth_images.py
+python3 convert_depth_images.py --help
 ```
