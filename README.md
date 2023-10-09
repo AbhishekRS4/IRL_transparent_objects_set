@@ -1,0 +1,1 @@
+# irl_kinect_transparent_objects_set
