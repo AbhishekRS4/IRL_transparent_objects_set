@@ -5,6 +5,7 @@
 
 ## Code
 * The code to collect and convert data into required formats is available in [scripts/](scripts/)
+* The main code used for the AI master's thesis work is available in another repository named [clearGraspPlus](https://github.com/AbhishekRS4/clearGraspPlus)
 
 ## Data
 * The dataset is available in [data/](data/)
