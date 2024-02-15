@@ -2,11 +2,8 @@
 
 ## Kinect v1 driver script
 
-### Info
-* The script [capture_images.py](capture_images.py) can be used to capture RGB and depth images with kinect v1.
-
 ### Setup instructions
-* The following are instructions to install the dependency - [libfreenect](https://github.com/OpenKinect/libfreenect)
+* The following are the instructions to install the dependency - [libfreenect](https://github.com/OpenKinect/libfreenect)
 1. Install cython
 ```
 sudo apt-get install cython3
@@ -66,7 +63,13 @@ Bus 001 Device 019: ID 045e:02b0 Microsoft Corp. Xbox NUI Motor
 Bus 001 Device 020: ID 045e:02ad Microsoft Corp. Xbox NUI Audio
 ```
 
+
+### Other dependencies
+* The other python dependencies can be found in [requirements.txt](requirements.txt)
+
+
 ### Script usage
+* The script [capture_images.py](capture_images.py) can be used to capture RGB and depth images with kinect v1.
 * This script can be used only on Linux environment with the above mentioned dependencies.
 * To list all the commandline options, run the following command
 ```
@@ -80,10 +83,16 @@ python3 capture_images.py
 ```
 * Use `Ctrl + C` to stop the script.
 
-## Depth data processing
+
+## RGB and Depth data processing
 
 ### Convert depth images from pickled numpy array to EXR format
-* Use the script in the following way to list possible commandline options
+* Use the script [convert_depth_images.py](convert_depth_images.py) for processing depth images. It can be used in the following way to list possible commandline options
 ```
 python3 convert_depth_images.py --help
 ```
+* Use the script [convert_color_images.py](convert_color_images.py) for processing color images. It can be used in the following way to list possible commandline options
+```
+python3 convert_color_images.py --help
+```
+* The notebook [visualize_kinect_rgbd_data.ipynb](visualize_kinect_rgbd_data.ipynb) can be used for visualizing the RGB and depth data collected with the kinect v1 camera.
