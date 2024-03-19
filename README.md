@@ -9,3 +9,10 @@
 
 ## Data
 * The dataset is available in [data/](data/)
+
+## Sample Images
+* The following are some sample images from the dataset for single and multi object scenarios
+![Sample test RGB image for a single object](sample_images/single_object_rgb.png?raw=true)
+![Sample test depth image for a single object](sample_images/single_object_depth.png?raw=true)
+![Sample test RGB image for multiple objects](sample_images/multi_object_rgb.png?raw=true)
+![Sample test depth image for multiple objects](sample_images/multi_object_depth.png?raw=true)
